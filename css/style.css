@@ -1,0 +1,21 @@
+nav {
+  background-color: blue;
+  opacity: .7;
+}
+
+
+
+nav ul li {
+  list-style: none;
+
+  margin-left: 20px;
+  margin-bottom:20px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.slide_set {
+  display:flex;
+  justify-content: space-between;
+
+}
