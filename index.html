@@ -26,22 +26,52 @@
 
         <!-- Add your site or application content here -->
 
+<div class="container">
+
+<div class="col-8-sm">
+
+<section class="slides">
 
 <section class="slide_set" id="slide1">
 
+<section class="slide_content">
   <section class:"logo">
-    <img src="img/noun_img_ASW2.jpg" alt="ASW">
+    <img src="img/Logomakr_5IMfp9 copy.png" alt="ASW">
+  </section>
+
+
+
+</section>
+
+</section>
+<section class="slide_set" id="slide2">
+
+  <section class:"logo">
+    <img src="img/Logomakr_5IMfp9 copy.png" alt="ASW">
+  </section>
+
+
+
+
+
+</section>
+
+
+<section class="slide_set" id="slide3">
+
+  <section class:"logo">
+    <img src="img/Logomakr_5IMfp9 copy.png" alt="ASW">
   </section>
 
         <nav>
 
-        <ul>
+        <!--<ul>
           <li>Guns VS. The People</li>
           <li>The Solution</li>
           <li>Picture This</li>
           <li>A.S.W</li>
           <li>Login</li>
-        </ul>
+        </ul>-->
 
         </nav>
 
@@ -51,10 +81,53 @@
 </section>
 
 
+</section>
 
+</div>
 
+<div class="col-4-sm">
 
-            <div class="container">
+<nav>
+
+  <div class="dropdown1">
+   <button class="dropbtn1 full-width">Guns VS. The People</button>
+   <div class="dropdown1-content">
+     <a id="gun_history" href="#">The History of Guns</a>
+     <a href="#">The Dihlemma with Gun Control</a>
+   </div>
+ </div>
+
+ <div class="dropdown2">
+   <button class="dropbtn2 full-width">The Solution</button>
+   <div class="dropdown2-content">
+     <a href="#">A.S.W Guns: What Is It?</a>
+     <a href="#">How Does It Work?</a>
+     <a href="#">How Does It Make A Difference?</a>
+   </div>
+ </div>
+
+ <div class="dropdown3">
+   <button class="dropbtn3 full-width">Picture This</button>
+   <div class="dropdown3-content">
+     <a href="#">Scenario 1</a>
+     <a href="#">Scenario 2</a>
+     <a href="#">Proactive VS Reactive</a>
+   </div>
+ </div>
+
+ <div class="dropdown4">
+   <button class="dropbtn4 full-width">A.S.W</button>
+   <div class="dropdown4-content">
+     <a href="#">Purchase</a>
+     <a href="#">Reviews</a>
+     <a href="#">Resources and Donations</a>
+   </div>
+ </div>
+
+</nav>
+
+</div>
+
 
       </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -71,5 +144,34 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+   <script>
+
+    $(document).ready(function() {
+
+     $("#slide1").fadeIn(3000, function() {
+
+
+     });
+
+//what the user clicks
+     $( "#gun_history" ).click(function() {
+       $("#slide1").fadeOut();
+       //this appears
+  $( "#slide2" ).fadeIn( "slow", function() {
+    // Animation complete
+
+  });
+});
+
+    });
+
+   </script>
+
+
+
+
+
+
     </body>
 </html>
