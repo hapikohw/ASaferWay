@@ -40,27 +40,27 @@
          <div class="margin dropdown2">
            <button class="dropbtn2 full-width">The Solution</button>
            <div class="dropdown2-content">
-             <a href="#">A.S.W Guns: What Is It?</a>
-             <a href="#">How Does It Work?</a>
-             <a href="#">How Does It Make A Difference?</a>
+             <a id="what_is_it" href="#">A.S.W Guns: What Is It?</a>
+             <a id="how_it_works" href="#">How Does It Work?</a>
+             <a id="how_it_differs" href="#">How Does It Make A Difference?</a>
            </div>
          </div>
 
          <div class="margin dropdown3">
            <button class="dropbtn3 full-width">Picture This</button>
            <div class="dropdown3-content">
-             <a href="#">Scenario 1</a>
-             <a href="#">Scenario 2</a>
-             <a href="#">Proactive VS Reactive</a>
+             <a id="scenario1" href="#">Scenario 1</a>
+             <a id="scenario2" href="#">Scenario 2</a>
+             <a id="Pro_V_Re" href="#">Proactive VS Reactive</a>
            </div>
          </div>
 
          <div class="margin dropdown4">
            <button class="dropbtn4 full-width">A.S.W</button>
            <div class="dropdown4-content">
-             <a href="#">Purchase</a>
-             <a href="#">Reviews</a>
-             <a href="#">Resources and Donations</a>
+             <a id="purchase" href="#">Purchase</a>
+             <a id="reviews" href="#">Reviews</a>
+             <a id="donate" href="#">Resources and Donations</a>
            </div>
          </div>
 
@@ -87,14 +87,14 @@
 <section class="slide_set" id="slide2">
 
   <section class="images">
-    <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+    <img src="img/action-smoke-fire-guns-74045.jpeg" alt="ASW">
   </section>
 
 </section>
 <section class="slide_set" id="slide3">
 
   <section class="images">
-    <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+    <img src="img/daniil-kuzelev-248948.jpg" alt="ASW">
   </section>
 
 
@@ -102,7 +102,7 @@
 <section class="slide_set" id="slide4">
 
   <section class="images">
-    <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+    <img src="img/scott-webb-274694.jpg" alt="ASW">
   </section>
 
 
@@ -110,7 +110,7 @@
 <section class="slide_set" id="slide5">
 
   <section class="images">
-    <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+    <img src="img/vladislav-klapin-297996.jpg" alt="ASW">
   </section>
 
 
@@ -123,71 +123,56 @@
     <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
   </section>
 
+</section>
+
 <section class="slide_set" id="slide7">
 
     <section class="images">
-      <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+      <img src="img/sofia-sforza-90360.jpg" alt="ASW">
     </section>
+
+</section>
 
 <section class="slide_set" id="slide8">
 
       <section class="images">
-        <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+        <img src="img/weapon-violence-children-child-52984.jpeg" alt="ASW">
       </section>
+</section>
 
   <section class="slide_set" id="slide9">
 
         <section class="images">
-          <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+          <img src="img/khachik-simonian-267840.jpg" alt="ASW">
         </section>
 
+</section>
   <section class="slide_set" id="slide10">
 
           <section class="images">
-            <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+            <img src="img/tim-marshall-114623.jpg" alt="ASW">
           </section>
 
+</section>
   <section class="slide_set" id="slide11">
 
             <section class="images">
-              <img src="img/gun-revolver-fire-firing-370202.jpeg" alt="ASW">
+              <img src="img/jamie-street-93160.jpg" alt="ASW">
             </section>
+</section>
+  <section class="slide_set" id="slide12">
 
+                      <section class="images">
+                        <img src="img/jamie-street-93160.jpg" alt="ASW">
+                      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
 
 </section>
 
 </div>
 
-<div class="col-4-sm">
 
-
-
-</div>
 
 
       </div>
@@ -207,42 +192,183 @@
         </script>
 
    <script>
+   $("#logo").ready(function() {
+      //slide1 fades in initially
+       $("#slide1").fadeIn(3000, function() {
 
-    $(document).ready(function() {
-    //slide1 fades in initially
-     $("#slide1").fadeIn(3000, function() {
 
+       });
 
-     });
+  //what the user clicks
+       $( "#gun_history" ).click(function() {
+         $("#slide1").fadeOut(6000);
+         //this appears
+    $( "#slide2" ).fadeIn(3000, function() {
+      // Animation complete
 
-//what the user clicks
-     $( "#gun_history" ).click(function() {
-       $("#slide1").fadeOut(6000);
-       //this appears
-  $( "#slide2" ).fadeIn(3000, function() {
-    // Animation complete
+    });
+
 
   });
 
 
-});
+  /*code begins*/
+      $( "#dihlemma" ).click(function() {
+        $("#slide1").fadeOut(6000);
+        $("#slide2").fadeOut();
+        //this appears
+   $( "#slide3" ).fadeIn(3000, function() {
+     // Animation complete
 
-
-/*code begins*/
-    $( "#dihlemma" ).click(function() {
-      $("#slide1").fadeOut(6000);
-      $("#slide2").fadeOut();
-      //this appears
- $( "#slide3" ).fadeIn(3000, function() {
-   // Animation complete
-
- });
-
-
-
-});
-/*code ends here*/
    });
+    });
+
+   $( "#what_is_it" ).click(function() {
+     $("#slide1").fadeOut(6000);
+     $("#slide2").fadeOut();
+     $("#slide3").fadeOut();
+     //this appears
+  $( "#slide4" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+  $( "#how_it_works" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    //this appears
+  $( "#slide5" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+  $( "#how_it_differs" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    //this appears
+  $( "#slide6" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+  $( "#scenario1" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    //this appears
+  $( "#slide7" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+
+  });
+  $( "#scenario2" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    $("#slide7").fadeOut();
+    //this appears
+  $( "#slide8" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+
+  $( "#Pro_V_Re" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    $("#slide7").fadeOut();
+    $("#slide8").fadeOut();
+    //this appears
+  $( "#slide9" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+  $( "#purchase" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    $("#slide7").fadeOut();
+    $("#slide8").fadeOut();
+    $("#slide9").fadeOut();
+    //this appears
+  $( "#slide10" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+  $( "#reviews" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    $("#slide7").fadeOut();
+    $("#slide8").fadeOut();
+    $("#slide9").fadeOut();
+    $("#slide10").fadeOut();
+    //this appears
+  $( "#slide11" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+  $( "#donate" ).click(function() {
+    $("#slide1").fadeOut(6000);
+    $("#slide2").fadeOut();
+    $("#slide3").fadeOut();
+    $("#slide4").fadeOut();
+    $("#slide5").fadeOut();
+    $("#slide6").fadeOut();
+    $("#slide7").fadeOut();
+    $("#slide8").fadeOut();
+    $("#slide9").fadeOut();
+    $("#slide10").fadeOut();
+    $("#slide11").fadeOut();
+    //this appears
+  $( "#slide12" ).fadeIn(3000, function() {
+  // Animation complete
+
+  });
+  });
+
+
+  /*code ends here*/
+     });
+
+
+
+
+
+
+
+
 
    </script>
 
