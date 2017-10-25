@@ -1,11 +1,35 @@
-nav {
-  background-color: blue;
-  opacity: .7;
+.logo img {
+ width:100%;
+
 }
 
-.container {
- display: flex;
- justify-content: space-between;
+.images img {
+ width:100%;
+
+}
+.slides {
+ display:flex;
+
+
+}
+
+nav {
+    background-color: blue;
+    opacity: .7;
+    height: 100%;
+    float: left;
+}
+
+.margin {
+    margin-bottom: 122px;
+}
+
+
+
+.logo {
+ position:fixed;
+ width:100%;
+ max-width: 900px;
 
 }
 
@@ -35,13 +59,53 @@ display:none;
 
 }
 
+#slide2 {
+display:none;
+
+}
+
 #slide3 {
  display:none;
 
 }
 
 
-#slide2 {
+#slide4 {
+ display:none;
+
+}
+
+#slide5 {
+ display:none;
+
+}
+
+#slide6 {
+ display:none;
+
+}
+
+#slide7 {
+ display:none;
+
+}
+
+#slide8 {
+ display:none;
+
+}
+
+#slide9 {
+ display:none;
+
+}
+
+#slide10 {
+ display:none;
+
+}
+
+#slide11 {
  display:none;
 
 }
